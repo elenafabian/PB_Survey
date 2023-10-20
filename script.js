@@ -31,6 +31,7 @@ function init() {
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message));
         completeQ(numQuestions);
+        finishSurvey();
     })
 
 }
@@ -113,6 +114,8 @@ function completeQ(n) {
 
 // FINISH SURVEY
 function finishSurvey() {
+    let tysm = document.getElementsByClassName("tysm");
+    tysm[0].removeAttribute("hidden");
     return;
 }
 
