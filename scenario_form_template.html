@@ -1,0 +1,79 @@
+<!--
+    To add another form to the html file
+    Replace all _ with i
+    Replace all __ with i+1
+-->>
+
+<form name="q_" id="q_" class="scenarioForm q_" hidden>
+
+    <h4 class="scenarioHeader">Scenario _</h4>
+    <p id="scenario_" class="scenarioStatement"></p>
+
+    <div class="hide" hidden>
+        <label for="email" class="autoparamLabel">email</label>
+        <input type="text" name="email" id="email_" class="autoparam email">
+
+        <label for="where" class="autoparamLabel">where</label>
+        <input type="text" name="where" id="where_" value="grocery store" class="autoparam where">
+
+        <label for="who" class="autoparamLabel">who</label>
+        <input type="text" name="who" id="who_" value="" class="autoparam who">
+        
+        <label for="what" class="autoparamLabel">what</label>
+        <input type="text" name="what" id="what_" value="" class="autoparam what">
+
+        <label for="why" class="autoparamLabel">why</label>
+        <input type="text" name="why" id="why_" value="" class="autoparam why">
+
+        <label for="persistence" class="autoparamLabel">persistence</label>
+        <input type="text" name="persistence" id="persistence_" value="" class="autoparam persistence">
+    </div>
+
+    <label for="risk" class="questionLabel">How risky is this scenario?</label>
+    <div>
+        1
+        <input type="radio" name="risk" class="risk" value="1">
+        <input type="radio" name="risk" class="risk" value="2">
+        <input type="radio" name="risk" class="risk" value="3">
+        <input type="radio" name="risk" class="risk" value="4">
+        <input type="radio" name="risk" class="risk" value="5">
+        <input type="radio" name="risk" class="risk" value="6">
+        <input type="radio" name="risk" class="risk" value="7">
+        7
+    </div>
+
+    <label for="comfort" class="questionLabel">How comfortable are you in this scenario?</label>
+    <div>
+        1
+        <input type="radio" name="comfort" class="comfort" value="1">
+        <input type="radio" name="comfort" class="comfort" value="2">
+        <input type="radio" name="comfort" class="comfort" value="3">
+        <input type="radio" name="comfort" class="comfort" value="4">
+        <input type="radio" name="comfort" class="comfort" value="5">
+        <input type="radio" name="comfort" class="comfort" value="6">
+        <input type="radio" name="comfort" class="comfort" value="7">
+        7
+    </div>
+
+    <label for="appropriateness" class="questionLabel">How appropriate is this scenario?</label>
+    <div>
+        1
+        <input type="radio" name="appropriateness" class="appropriateness" value="1">
+        <input type="radio" name="appropriateness" class="appropriateness" value="2">
+        <input type="radio" name="appropriateness" class="appropriateness" value="3">
+        <input type="radio" name="appropriateness" class="appropriateness" value="4">
+        <input type="radio" name="appropriateness" class="appropriateness" value="5">
+        <input type="radio" name="appropriateness" class="appropriateness" value="6">
+        <input type="radio" name="appropriateness" class="appropriateness" value="7">
+        7
+    </div>
+
+    <label for="decision" class="questionLabel">If you had a choice, would you accept or reject this data collection?</label>
+    <div>
+        <input type="radio" name="decision" class="decision" value="accept">ACCEPT</input>
+        <input type="radio" name="decision" class="decision" value="reject">REJECT</input>
+    </div>
+
+    <input type="submit" value="Submit & Move to Scenario __">
+    
+</form>

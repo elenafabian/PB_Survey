@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>Privacy Survey</title>
+    </head>
+
+    <h1>
+        Privacy Survey
+    </h1>
+    <h2>
+        This survey is part of a research project for Northwestern University's CS 412 (Data Privacy) and 
+        with advising from and implications for Privacy Backplane (privacy-backplane.org).
+    </h2>
+    <h3>
+        Elena Fabian, Graham Grieb, Patrick Jiang, Ryan Wong
+    </h3>
+    <h2>
+        In each scenario you are in a grocery store riddled with internet-of-things devices. 
+        Raw video is collected, but all data is processed behind a trusted privacy backplane.
+        Please evaluate each of these scenarios involving your data.
+    </h2>
+
+    <div class="q0email">
+        <label for="email">email</label>
+        <input type="text" name="email" id="realEmail">
+        <button onclick="startSurvey()">Begin Scenario 1</button>
+    </div>
+    <form name="q1" id="q1" class="scenarioForm q1" hidden>
+
+        <h4 class=""scenarioHeader>Scenario 1</h4>
+        <p id="scenario1" class="scenarioStatement"></p>
+
+        <div class="hide" hidden>
+            <label for="email" class="autoparamLabel">email</label>
+            <input type="text" name="email" id="email1" class="autoparam email">
+
+            <label for="where" class="autoparamLabel">where</label>
+            <input type="text" name="where" id="where1" value="grocery store" class="autoparam where">
+
+            <label for="who" class="autoparamLabel">who</label>
+            <input type="text" name="who" id="who1" value="" class="autoparam who">
+            
+            <label for="what" class="autoparamLabel">what</label>
+            <input type="text" name="what" id="what1" value="" class="autoparam what">
+
+            <label for="why" class="autoparamLabel">why</label>
+            <input type="text" name="why" id="why1" value="" class="autoparam why">
+
+            <label for="persistence" class="autoparamLabel">persistence</label>
+            <input type="text" name="persistence" id="persistence1" value="" class="autoparam persistence">
+        </div>
+
+        <label for="risk" class="questionLabel">How risky is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="risk" class="risk" value="1">
+            <input type="radio" name="risk" class="risk" value="2">
+            <input type="radio" name="risk" class="risk" value="3">
+            <input type="radio" name="risk" class="risk" value="4">
+            <input type="radio" name="risk" class="risk" value="5">
+            <input type="radio" name="risk" class="risk" value="6">
+            <input type="radio" name="risk" class="risk" value="7">
+            7
+        </div>
+
+        <label for="comfort" class="questionLabel">How comfortable are you in this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="comfort" class="comfort" value="1">
+            <input type="radio" name="comfort" class="comfort" value="2">
+            <input type="radio" name="comfort" class="comfort" value="3">
+            <input type="radio" name="comfort" class="comfort" value="4">
+            <input type="radio" name="comfort" class="comfort" value="5">
+            <input type="radio" name="comfort" class="comfort" value="6">
+            <input type="radio" name="comfort" class="comfort" value="7">
+            7
+        </div>
+
+        <label for="appropriateness" class="questionLabel">How appropriate is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="appropriateness" class="appropriateness" value="1">
+            <input type="radio" name="appropriateness" class="appropriateness" value="2">
+            <input type="radio" name="appropriateness" class="appropriateness" value="3">
+            <input type="radio" name="appropriateness" class="appropriateness" value="4">
+            <input type="radio" name="appropriateness" class="appropriateness" value="5">
+            <input type="radio" name="appropriateness" class="appropriateness" value="6">
+            <input type="radio" name="appropriateness" class="appropriateness" value="7">
+            7
+        </div>
+
+        <label for="decision" class="questionLabel">If you had a choice, would you accept or reject this data collection?</label>
+        <div>
+            <input type="radio" name="decision" class="decision" value="accept">ACCEPT</input>
+            <input type="radio" name="decision" class="decision" value="reject">REJECT</input>
+        </div>
+
+        <input type="submit" value="Submit & Move to Scenario 2">
+        
+    </form>
+    <form name="q2" id="q2" class="scenarioForm q2" hidden>
+
+        <h4 class="scenarioHeader">Scenario 2</h4>
+        <p id="scenario2" class="scenarioStatement"></p>
+
+        <div class="hide" hidden>
+            <label for="email" class="autoparamLabel">email</label>
+            <input type="text" name="email" id="email2" class="autoparam email">
+
+            <label for="where" class="autoparamLabel">where</label>
+            <input type="text" name="where" id="where2" value="grocery store" class="autoparam where">
+
+            <label for="who" class="autoparamLabel">who</label>
+            <input type="text" name="who" id="who2" value="" class="autoparam who">
+            
+            <label for="what" class="autoparamLabel">what</label>
+            <input type="text" name="what" id="what2" value="" class="autoparam what">
+
+            <label for="why" class="autoparamLabel">why</label>
+            <input type="text" name="why" id="why2" value="" class="autoparam why">
+
+            <label for="persistence" class="autoparamLabel">persistence</label>
+            <input type="text" name="persistence" id="persistence2" value="" class="autoparam persistence">
+        </div>
+
+        <label for="risk" class="questionLabel">How risky is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="risk" class="risk" value="1">
+            <input type="radio" name="risk" class="risk" value="2">
+            <input type="radio" name="risk" class="risk" value="3">
+            <input type="radio" name="risk" class="risk" value="4">
+            <input type="radio" name="risk" class="risk" value="5">
+            <input type="radio" name="risk" class="risk" value="6">
+            <input type="radio" name="risk" class="risk" value="7">
+            7
+        </div>
+
+        <label for="comfort" class="questionLabel">How comfortable are you in this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="comfort" class="comfort" value="1">
+            <input type="radio" name="comfort" class="comfort" value="2">
+            <input type="radio" name="comfort" class="comfort" value="3">
+            <input type="radio" name="comfort" class="comfort" value="4">
+            <input type="radio" name="comfort" class="comfort" value="5">
+            <input type="radio" name="comfort" class="comfort" value="6">
+            <input type="radio" name="comfort" class="comfort" value="7">
+            7
+        </div>
+
+        <label for="appropriateness" class="questionLabel">How appropriate is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="appropriateness" class="appropriateness" value="1">
+            <input type="radio" name="appropriateness" class="appropriateness" value="2">
+            <input type="radio" name="appropriateness" class="appropriateness" value="3">
+            <input type="radio" name="appropriateness" class="appropriateness" value="4">
+            <input type="radio" name="appropriateness" class="appropriateness" value="5">
+            <input type="radio" name="appropriateness" class="appropriateness" value="6">
+            <input type="radio" name="appropriateness" class="appropriateness" value="7">
+            7
+        </div>
+
+        <label for="decision" class="questionLabel">If you had a choice, would you accept or reject this data collection?</label>
+        <div>
+            <input type="radio" name="decision" class="decision" value="accept">ACCEPT</input>
+            <input type="radio" name="decision" class="decision" value="reject">REJECT</input>
+        </div>
+
+        <input type="submit" value="Submit & Move to Scenario 3">
+        
+    </form>
+    <form name="q3" id="q3" class="scenarioForm q3" hidden>
+
+        <h4 class="scenarioHeader">Scenario 3</h4>
+        <p id="scenario3" class="scenarioStatement"></p>
+    
+        <div class="hide" hidden>
+            <label for="email" class="autoparamLabel">email</label>
+            <input type="text" name="email" id="email3" class="autoparam email">
+    
+            <label for="where" class="autoparamLabel">where</label>
+            <input type="text" name="where" id="where3" value="grocery store" class="autoparam where">
+    
+            <label for="who" class="autoparamLabel">who</label>
+            <input type="text" name="who" id="who3" value="" class="autoparam who">
+            
+            <label for="what" class="autoparamLabel">what</label>
+            <input type="text" name="what" id="what3" value="" class="autoparam what">
+    
+            <label for="why" class="autoparamLabel">why</label>
+            <input type="text" name="why" id="why3" value="" class="autoparam why">
+    
+            <label for="persistence" class="autoparamLabel">persistence</label>
+            <input type="text" name="persistence" id="persistence3" value="" class="autoparam persistence">
+        </div>
+    
+        <label for="risk" class="questionLabel">How risky is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="risk" class="risk" value="1">
+            <input type="radio" name="risk" class="risk" value="2">
+            <input type="radio" name="risk" class="risk" value="3">
+            <input type="radio" name="risk" class="risk" value="4">
+            <input type="radio" name="risk" class="risk" value="5">
+            <input type="radio" name="risk" class="risk" value="6">
+            <input type="radio" name="risk" class="risk" value="7">
+            7
+        </div>
+    
+        <label for="comfort" class="questionLabel">How comfortable are you in this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="comfort" class="comfort" value="1">
+            <input type="radio" name="comfort" class="comfort" value="2">
+            <input type="radio" name="comfort" class="comfort" value="3">
+            <input type="radio" name="comfort" class="comfort" value="4">
+            <input type="radio" name="comfort" class="comfort" value="5">
+            <input type="radio" name="comfort" class="comfort" value="6">
+            <input type="radio" name="comfort" class="comfort" value="7">
+            7
+        </div>
+    
+        <label for="appropriateness" class="questionLabel">How appropriate is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="appropriateness" class="appropriateness" value="1">
+            <input type="radio" name="appropriateness" class="appropriateness" value="2">
+            <input type="radio" name="appropriateness" class="appropriateness" value="3">
+            <input type="radio" name="appropriateness" class="appropriateness" value="4">
+            <input type="radio" name="appropriateness" class="appropriateness" value="5">
+            <input type="radio" name="appropriateness" class="appropriateness" value="6">
+            <input type="radio" name="appropriateness" class="appropriateness" value="7">
+            7
+        </div>
+    
+        <label for="decision" class="questionLabel">If you had a choice, would you accept or reject this data collection?</label>
+        <div>
+            <input type="radio" name="decision" class="decision" value="accept">ACCEPT</input>
+            <input type="radio" name="decision" class="decision" value="reject">REJECT</input>
+        </div>
+    
+        <input type="submit" value="Submit & Move to Scenario 4">
+        
+    </form>
+    <form name="q4" id="q4" class="scenarioForm q4" hidden>
+
+        <h4 class="scenarioHeader">Scenario 4</h4>
+        <p id="scenario4" class="scenarioStatement"></p>
+    
+        <div class="hide" hidden>
+            <label for="email" class="autoparamLabel">email</label>
+            <input type="text" name="email" id="email4" class="autoparam email">
+    
+            <label for="where" class="autoparamLabel">where</label>
+            <input type="text" name="where" id="where4" value="grocery store" class="autoparam where">
+    
+            <label for="who" class="autoparamLabel">who</label>
+            <input type="text" name="who" id="who4" value="" class="autoparam who">
+            
+            <label for="what" class="autoparamLabel">what</label>
+            <input type="text" name="what" id="what4" value="" class="autoparam what">
+    
+            <label for="why" class="autoparamLabel">why</label>
+            <input type="text" name="why" id="why4" value="" class="autoparam why">
+    
+            <label for="persistence" class="autoparamLabel">persistence</label>
+            <input type="text" name="persistence" id="persistence4" value="" class="autoparam persistence">
+        </div>
+    
+        <label for="risk" class="questionLabel">How risky is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="risk" class="risk" value="1">
+            <input type="radio" name="risk" class="risk" value="2">
+            <input type="radio" name="risk" class="risk" value="3">
+            <input type="radio" name="risk" class="risk" value="4">
+            <input type="radio" name="risk" class="risk" value="5">
+            <input type="radio" name="risk" class="risk" value="6">
+            <input type="radio" name="risk" class="risk" value="7">
+            7
+        </div>
+    
+        <label for="comfort" class="questionLabel">How comfortable are you in this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="comfort" class="comfort" value="1">
+            <input type="radio" name="comfort" class="comfort" value="2">
+            <input type="radio" name="comfort" class="comfort" value="3">
+            <input type="radio" name="comfort" class="comfort" value="4">
+            <input type="radio" name="comfort" class="comfort" value="5">
+            <input type="radio" name="comfort" class="comfort" value="6">
+            <input type="radio" name="comfort" class="comfort" value="7">
+            7
+        </div>
+    
+        <label for="appropriateness" class="questionLabel">How appropriate is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="appropriateness" class="appropriateness" value="1">
+            <input type="radio" name="appropriateness" class="appropriateness" value="2">
+            <input type="radio" name="appropriateness" class="appropriateness" value="3">
+            <input type="radio" name="appropriateness" class="appropriateness" value="4">
+            <input type="radio" name="appropriateness" class="appropriateness" value="5">
+            <input type="radio" name="appropriateness" class="appropriateness" value="6">
+            <input type="radio" name="appropriateness" class="appropriateness" value="7">
+            7
+        </div>
+    
+        <label for="decision" class="questionLabel">If you had a choice, would you accept or reject this data collection?</label>
+        <div>
+            <input type="radio" name="decision" class="decision" value="accept">ACCEPT</input>
+            <input type="radio" name="decision" class="decision" value="reject">REJECT</input>
+        </div>
+    
+        <input type="submit" value="Submit & Move to Scenario 5">
+        
+    </form>
+    <form name="q5" id="q5" class="scenarioForm q5" hidden>
+
+        <h4 class="scenarioHeader">Scenario 5</h4>
+        <p id="scenario5" class="scenarioStatement"></p>
+    
+        <div class="hide" hidden>
+            <label for="email" class="autoparamLabel">email</label>
+            <input type="text" name="email" id="email5" class="autoparam email">
+    
+            <label for="where" class="autoparamLabel">where</label>
+            <input type="text" name="where" id="where5" value="grocery store" class="autoparam where">
+    
+            <label for="who" class="autoparamLabel">who</label>
+            <input type="text" name="who" id="who5" value="" class="autoparam who">
+            
+            <label for="what" class="autoparamLabel">what</label>
+            <input type="text" name="what" id="what5" value="" class="autoparam what">
+    
+            <label for="why" class="autoparamLabel">why</label>
+            <input type="text" name="why" id="why5" value="" class="autoparam why">
+    
+            <label for="persistence" class="autoparamLabel">persistence</label>
+            <input type="text" name="persistence" id="persistence5" value="" class="autoparam persistence">
+        </div>
+    
+        <label for="risk" class="questionLabel">How risky is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="risk" class="risk" value="1">
+            <input type="radio" name="risk" class="risk" value="2">
+            <input type="radio" name="risk" class="risk" value="3">
+            <input type="radio" name="risk" class="risk" value="4">
+            <input type="radio" name="risk" class="risk" value="5">
+            <input type="radio" name="risk" class="risk" value="6">
+            <input type="radio" name="risk" class="risk" value="7">
+            7
+        </div>
+    
+        <label for="comfort" class="questionLabel">How comfortable are you in this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="comfort" class="comfort" value="1">
+            <input type="radio" name="comfort" class="comfort" value="2">
+            <input type="radio" name="comfort" class="comfort" value="3">
+            <input type="radio" name="comfort" class="comfort" value="4">
+            <input type="radio" name="comfort" class="comfort" value="5">
+            <input type="radio" name="comfort" class="comfort" value="6">
+            <input type="radio" name="comfort" class="comfort" value="7">
+            7
+        </div>
+    
+        <label for="appropriateness" class="questionLabel">How appropriate is this scenario?</label>
+        <div>
+            1
+            <input type="radio" name="appropriateness" class="appropriateness" value="1">
+            <input type="radio" name="appropriateness" class="appropriateness" value="2">
+            <input type="radio" name="appropriateness" class="appropriateness" value="3">
+            <input type="radio" name="appropriateness" class="appropriateness" value="4">
+            <input type="radio" name="appropriateness" class="appropriateness" value="5">
+            <input type="radio" name="appropriateness" class="appropriateness" value="6">
+            <input type="radio" name="appropriateness" class="appropriateness" value="7">
+            7
+        </div>
+    
+        <label for="decision" class="questionLabel">If you had a choice, would you accept or reject this data collection?</label>
+        <div>
+            <input type="radio" name="decision" class="decision" value="accept">ACCEPT</input>
+            <input type="radio" name="decision" class="decision" value="reject">REJECT</input>
+        </div>
+    
+        <input type="submit" value="Submit Completed Survey">
+        
+    </form>
+
+    <script src="script.js"></script>
+</html>
