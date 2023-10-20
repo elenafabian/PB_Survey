@@ -75,7 +75,7 @@ function showQ(n) {
 
     let scenarioString = "You are in <b>" + wherey + "</b> and your raw video footage will be held in the trusted privacy backplane <b>" + persistencey + "</b>. ";
     scenarioString += "The <b>" + whoy + "</b> is trying to collect <b>" + whaty + "</b> from your data. ";
-    scenarioString += "The reason is <b>" + whyy + "<b>.";
+    scenarioString += "The reason is <b>" + whyy + "</b>.";
     let scenarioStatement = document.getElementById('scenario' + n);
     scenarioStatement.innerHTML = scenarioString;
 
