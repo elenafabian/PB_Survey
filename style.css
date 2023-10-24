@@ -23,6 +23,9 @@ h3 {
     font-size: x-large;
     font-weight: 100;
 }
+ul {
+    font-weight: 100;
+}
 
 label {
     font-weight: 100;

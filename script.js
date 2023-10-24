@@ -128,7 +128,7 @@ function where() {
 }
 
 function who() {
-    let options = ['large corporate owner', 'local operational team', 'government/police'];
+    let options = ['large corporate owner', 'branch employees', 'government/police'];
     let rand = Math.floor(Math.random() * options.length)
     return options[rand];
 }
