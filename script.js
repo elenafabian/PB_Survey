@@ -134,7 +134,7 @@ function who() {
 }
 
 function what() {
-    let options = ['your identity-linked location tracker', 'your identity-scrubbed location tracker', 'count of people in each aisle'];
+    let options = ['your identity and location throughout the store', 'your anonymmized location throughout the store', 'count of people in each aisle'];
     let rand = Math.floor(Math.random() * options.length)
     return options[rand];
 }
